@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBattle</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="config-container">
+        <h2 class="config-title">BrainBattle</h2>
+         <div class="config-option">
+            <h4 class="option-title">Select Category</h4>
+            <div class="category-options">
+                <button class="category-option active">Programming</button>
+                <button class="category-option">Entertainment</button>
+                <button class="category-option">Mathematics</button>
+                <button class="category-option">Geography</button>
+            </div>
+         </div>   
+             <div class="config-option">
+                <h4 class="option-title">No. Of Questions</h4>
+                <div class="question-options">
+                    <button class="question-option active">5</button>
+                    <button class="question-option">10</button>
+                    <button class="question-option">15</button>
+                    <button class="question-option">20</button>
+                </div>
+             </div>   
+            <button class="start">Start Quiz</button>
+  </div>  
+  <div class="quiz">
+    <header class="header">
+        <h2 class="title">Answer The Following :-</h2>
+        <div class="timer">
+            <span class="material-symbols-rounded">timer</span>
+            <p class="duration">15s</p>  
+        </div>
+        </header>
+        <div class="content">
+          <h1 class="question-text"></h1>
+          <ul class="answer-options"></ul>
+        </div>
+        <div class="footer">
+          <p class="status"></p>
+          <button class="next">
+              Next<span class="material-symbols-rounded">arrow_right_alt</span>
+          </button>
+        </div>
+  </div>
+  <div class="result">
+    <img src="images/quiz over.jpeg"class="resultimg">
+    <h2 class="resulttitle">Quiz Completed !</h2>
+    <p class="message"></p>
+    <button class="try">Try Again</button>
+  </div>
+  <script src="question.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
